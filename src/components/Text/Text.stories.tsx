@@ -11,4 +11,6 @@ const Template: Story<TextProps> = (args) => (
 );
 
 export const Default = Template.bind({});
-Default.args = {};
+Default.args = {
+  variant: 'label'
+};

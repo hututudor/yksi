@@ -1,4 +1,5 @@
 import { Theme } from 'styled-system';
+import { YksiTheme } from './interface';
 
 const BORDERS: Theme['borders'] = [
   0,
@@ -76,7 +77,7 @@ const GRID = 4;
 const SPACE: Theme['space'] = (() =>
   Array.from({ length: 1000 }).map((_, i) => i * GRID))();
 
-export const defaultTheme: Theme = {
+export const defaultTheme: YksiTheme = {
   borders: BORDERS,
   breakpoints: BREAKPOINTS,
   colors: COLORS,

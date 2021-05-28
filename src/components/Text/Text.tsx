@@ -36,6 +36,6 @@ export const Text: FC<TextProps> = styled.div<TextProps>(
     space,
     textStyle,
     typography,
-    variant({ scale: 'text' })
+    variant({ scale: 'Text' })
   )
 );
