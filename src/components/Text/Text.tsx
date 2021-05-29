@@ -16,6 +16,7 @@ import {
   TextStyleProps,
   TypographyProps
 } from 'styled-system';
+import { themeGet } from '../../utils';
 
 export interface TextProps
   extends ColorProps,
@@ -28,7 +29,11 @@ export interface TextProps
   as?: string;
 }
 
-export const Text: FC<TextProps> = styled.div<TextProps>(
+const StyledText = styled.div`
+  font-family: ${themeGet('fonts.primary')};
+`;
+
+export const Text: FC<TextProps> = styled(StyledText)<TextProps>(
   compose(
     color,
     colorStyle,

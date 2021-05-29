@@ -25,7 +25,10 @@ const COLORS: Theme['colors'] = {
 
 const SHADOWS: Theme['shadows'] = {};
 
-const FONTS: Theme['fonts'] = {};
+const FONTS: Theme['fonts'] = {
+  primary: '"Barlow", sans-serif',
+  mono: '"JetBrains Mono", monospace'
+};
 
 const FONT_SIZES: Theme['fontSizes'] = [
   '12px',
